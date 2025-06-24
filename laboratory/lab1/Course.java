@@ -13,7 +13,6 @@ public class Course {
         this.prerequisites = prerequisites;
     }
 
-    @Override
     public String toString() {
         return name + ": " + description + " (" + credits + " credits, Prerequisites: " + prerequisites + ")";
     }

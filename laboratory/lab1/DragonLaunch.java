@@ -19,16 +19,16 @@ public class DragonLaunch {
 	            Person current = line.get(i);
 
 	            if (top >= 0 && line.get(top).getGender() == Gender.BOY && current.getGender() == Gender.GIRL) {
-	                top--; // Cancel the previous BOY with current GIRL
+	                top--; 
 	            } else {
 	                top++;
 	                if (top < i) {
-	                    line.set(top, current); // Overwrite to simulate stack
+	                    line.set(top, current);
 	                }
 	            }
 	        }
 
-	        // The remaining size is (top + 1)
+	        
 	        return top >= 0;
 	    }
 
